@@ -1,0 +1,38 @@
+VERA v1.0.0-beta.1 validation summary
+
+Base
+- Updated directly from VERA v0.6.20. Not rebuilt from scratch.
+
+Assessment-engine preservation
+- Unchanged: estimateAgeFromFCIN12
+- Unchanged: getAtfBand
+- Unchanged: bs5837EquivalentDbh
+- Unchanged: evaluateOpenBARD
+- Unchanged: summariseVAI
+- Unchanged: buildVeraEvidenceChains
+- Unchanged: veraAncientGate
+- Unchanged: veraPathwayConclusion
+- VTEM scoring weights and band thresholds were not changed.
+
+VTEM housekeeping
+- Removed stale size counters that no longer matched the current catalogue-class ranks.
+- Higher catalogue size/complexity reporting now uses scaleRank >= 2.
+- Removed a redundant legacy High-band condition whose outcome was already captured by existing feature-score rules.
+- Regression comparison of old vs new VTEM band logic: 0 mismatches across all single-feature scale rows at counts 1-10 plus 100,000 random combinations.
+
+Syntax/integrity
+- Extracted inline JavaScript: node --check PASS
+- sw.js: node --check PASS
+- manifest.webmanifest: JSON parse PASS
+- release ZIP integrity: PASS
+
+UI / beta tidy
+- Public beta marker added.
+- Photo layout moved into the upper PNG assessment overview and collapses cleanly when no photos are supplied.
+- Obsolete feedback test-delivery/outbox controls removed from the public UI/code.
+- Existing configured beta feedback email workflow retained.
+- PWA service-worker cache bumped to v1.0.0-beta.1 with network-first fetching and cache fallback.
+
+Limitations
+- Automated headless Chromium visual capture was not available reliably in the build environment. Manual visual testing of the final photo/PNG layout on desktop and phone is still recommended before public announcement.
+- Final 2026 NPPF wording has not been incorporated; the beta label should remain until the published wording is verified.

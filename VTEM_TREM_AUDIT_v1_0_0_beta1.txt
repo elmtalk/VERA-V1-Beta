@@ -1,0 +1,42 @@
+VERA v1.0.0-beta.1 — VTEM / TreM size-scale audit
+
+Conclusion
+The present architecture is suitable for beta testing, but one scale item should be explicitly reviewed before declaring the scoring frozen for a final v1.0.0.
+
+Current design
+- A TreM below its published catalogue threshold does not contribute to VTEM significance.
+- Where the catalogue provides only a minimum threshold, that threshold is treated as a registration gate and adds no invented size score.
+- Where a real larger catalogue class exists, it may add a modest size/complexity increment.
+- Presence-only TreMs add no invented size increment.
+- VTEM then stacks VERA-created evidence for rarity, replacement/continuity, habitat specialisation, catalogue size/complexity class where applicable, and abundance.
+- The dimensions are added rather than multiplied.
+- Abundance is capped at +3.
+
+Current feature score
+stackedScore = rarity + replacement + habitat specialisation + scale rank + abundance
+
+Feature bands
+- Significant: >= 6
+- High: >= 12
+- Exceptional: >= 18
+
+Overall VTEM bands
+- Exceptional: exceptional feature, or specified combination of high/slow signals.
+- High: high feature or specified accumulation of significant features.
+- Significant: significant feature or sufficient contributing occurrence count.
+
+Sensitivity check
+Across all current contributing TreM scale rows:
+- At count 1: 1 Exceptional, 16 High, 35 Significant, 10 Supporting.
+- At count 7: 5 Exceptional, 28 High, 28 Significant, 1 Supporting.
+The current abundance cap did not cause low-value common features to become Exceptional in the tested single-feature cases.
+
+Item requiring explicit decision
+TreM 4 — Woodpecker flute (>=3 connected cavities or 3 openings within 2 m) currently has scaleRank 4. With its other current VTEM dimensions, one recorded flute scores 19 and therefore reaches Exceptional habitat-bearing condition evidence. Under the present VERA pathway logic, Exceptional VTEM can complete the condition -> exceptional biodiversity -> NPPF veteran-tree pathway.
+
+This may be defensible because a woodpecker flute is intrinsically a complex, rare and slow-replacement feature, but it is the only current scale-rank-4 outlier. Before final v1.0.0, decide explicitly whether a single woodpecker flute should be capable of completing that pathway.
+
+Conservative alternative (NOT applied in beta.1)
+Reduce the flute scaleRank from 4 to 2. On current weights this would make one flute score 17 (High / strong review), while repeated occurrence or supporting high-value TreMs could still lift the tree to Exceptional.
+
+No scoring-engine change was made in v1.0.0-beta.1 as part of this audit.

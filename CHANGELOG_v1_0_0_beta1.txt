@@ -1,0 +1,24 @@
+VERA v1.0.0-beta.1
+
+Public-beta tidy release based directly on v0.6.20.
+
+Presentation / workflow
+- Rebadged as v1.0.0-beta.1 and visibly labelled Public beta.
+- Moved assessment photographs into the upper PNG summary area.
+- PNG layout collapses cleanly when no photographs are present.
+- 1 photo uses a large panel; 2 photos use equal panels; 3–6 use a compact grid with the first photograph larger.
+- Shortened PNG status pills to OpenBARD / VAI / VTEM after the full titles are established elsewhere.
+- Removed obsolete hidden feedback test-delivery controls and local test-outbox code.
+- Retained feedback destination vera.tree.app@gmail.com and explicit privacy choices.
+- Renamed 'test list' user-facing controls to Saved trees / Save tree.
+- Updated WSL TreM source wording to the 2024 second-edition field-guide title.
+
+VTEM housekeeping
+- No TreM rarity, replacement, habitat, abundance, size/scale weights or band thresholds changed.
+- Removed a stale unreachable 'exceptional size' counter and a redundant legacy high-band condition.
+- Reporting now describes scaleRank >=2 as a higher catalogue size/complexity class rather than using the old >=4 'size' wording.
+- Current score outcomes are intended to remain unchanged by this housekeeping.
+
+Not yet changed
+- NPPF definition/pathway wording: awaiting confirmation of the final 2026 publication.
+- Core ATF, FCIN12, OpenBARD, VAI and VTEM calculations remain as in v0.6.20 except for the output-neutral VTEM housekeeping above.
